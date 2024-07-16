@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/lswith/hello-world-js#readme",
   "dependencies": {
-    "dd-trace": "^5.18.0"
+    "dd-trace": "^5.18.0",
+    "pino": "^9.3.1",
+    "pino-http": "^10.2.0"
   }
 }

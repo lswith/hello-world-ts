@@ -1,3 +1,4 @@
+const tracer = require("dd-trace").init();
 const http = require("http"); // Loads the http module
 
 const server = http.createServer((request, response) => {

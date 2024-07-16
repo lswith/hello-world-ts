@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lswith/hello-world-js/issues"
   },
-  "homepage": "https://github.com/lswith/hello-world-js#readme"
+  "homepage": "https://github.com/lswith/hello-world-js#readme",
+  "dependencies": {
+    "dd-trace": "^5.18.0"
+  }
 }

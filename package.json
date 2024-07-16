@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "DD_LOGS_INJECTION=true DD_ENV=local DD_GIT_COMMIT_SHA=\"$(git rev-parse HEAD)\" DD_GIT_REPOSITORY_URL='https://github.com/lswith/hello-world-ts' ts-node-script index.ts"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,11 @@
   "dependencies": {
     "dd-trace": "^5.18.0",
     "pino": "^9.3.1",
-    "pino-http": "^10.2.0"
-  }
+    "pino-http": "^10.2.0",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

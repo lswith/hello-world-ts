@@ -14,6 +14,8 @@ It has been setup with:
 
 To get datadog working locally, you will need to install the agent on your computer: https://docs.datadoghq.com/agent/basic_agent_usage/osx/
 
+You will also need an api key. This can be created in the organization settings when logging into datadog.
+
 You will need to make sure the agent is configured with:
 
 ```

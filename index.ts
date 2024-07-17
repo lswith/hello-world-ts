@@ -1,3 +1,4 @@
+import "./tracer";
 import express from "express";
 import { buildSchema } from "graphql";
 import { createHandler } from "graphql-http/lib/use/express";
@@ -26,10 +27,6 @@ const logger = pino({
   },
 });
 
-const tracer = require("dd-trace").init({
-  logInjection: true,
-});
-
 var schema = buildSchema(`
   type Query {
     hello: String
@@ -53,7 +50,7 @@ app.all(
   createHandler({
     schema: schema,
     rootValue: root,
-  })
+  }),
 );
 
 app.get("/graphiql", (_req, res) => {

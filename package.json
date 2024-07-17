@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "DD_LOGS_INJECTION=true DD_ENV=local DD_GIT_COMMIT_SHA=\"$(git rev-parse HEAD)\" DD_GIT_REPOSITORY_URL='https://github.com/lswith/hello-world-ts' ts-node-script index.ts"
+    "dev": "DD_LOGS_INJECTION=true DD_ENV=local DD_SERVICE='hello-world' DD_VERSION=\"$npm_package_version\" DD_GIT_COMMIT_SHA=\"$(git rev-parse HEAD)\" DD_GIT_REPOSITORY_URL='https://github.com/lswith/hello-world-ts' ts-node-script index.ts"
   },
   "repository": {
     "type": "git",
